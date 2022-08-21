@@ -4,16 +4,6 @@ body{
   background: #3c3c3c;
 }
 
-/* default design */
-header{
-  /* padding: 20px; */
-  /* background: #3c3c3c;
-  padding: 20px;
-  text-align: center;
-  color: #fff;
-  font-size: 20px;
-  font-weight: bold; */
-}
 nav > ul{
   position: fixed;
   margin-top: 0px;
@@ -104,4 +94,8 @@ nav > ul > li > a:hover{
   width: 100%;
   padding: 20px;
   text-align:center;
+}
+
+.bright-text-light{
+  text-shadow: 5px 5px 10px white;
 }
