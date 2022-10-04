@@ -1,0 +1,11 @@
+nav{
+  margin: 20px 0px 0px 0px;
+  padding: 20px;
+  border: 1px solid rgba( 0,0,0,0.1 );
+  border-radius: 10px;
+}
+
+.nav-item > .active{
+  color: white;
+  background: #c03c03;
+}

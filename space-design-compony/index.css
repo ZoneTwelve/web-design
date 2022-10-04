@@ -99,3 +99,7 @@ nav > ul > li > a:hover{
 .bright-text-light{
   text-shadow: 5px 5px 10px white;
 }
+
+.h1-title{
+  font-size: 4.5rem;
+}
