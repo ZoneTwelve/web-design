@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <title>Login | PMS</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <style>
+    body{
+      margin: 0px auto;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      height:100vh;
+      background: #f2f2f2;
+      /* background: linear-gradient(0.05turn,#91271af0, #af3121f0) no-repeat; */
+      /* background: url('/src/images/new-year.jpg') center center fixed; */
+    }
+    #app{
+      border-radius: 10px;
+      background: ghostwhite;
+      box-shadow: 5px 5px 15px black;
+      margin-top:-100px;
+      padding:50px 50px;
+    }
+    *{
+      /* outline: solid; */
+    }
+  </style>
+  <script>
+    var vue;
+    const holiday_path = "src/images/holiday";
+    const holiday_bg = {
+      '01-00': `${holiday_path}/new-year.jpg`
+    }
+    window.onload = function( ){
+      let now = new Date(), today = (s_date_format( now )), month = `${("0"+now.getMonth()+1).substr( -2 )}-00`;
+      let bg = holiday_bg[ today ] || holiday_bg[ month ];
+      if( bg ){
+        console.log( bg, `url('${bg}') center center fixed;` );
+        document.body.style.background = `url('${bg}')`;
+      }
+    }
+    function s_date_format( d, format ){
+      return `${("0"+d.getMonth()+1).substr( -2 )}-${("0"+d.getDate()).substr(-2)}`;
+    }
+  </script>
+</head>
+<body>
+  <div id="app" class="container border">
+    <h1>人員管理系統</h1>
+    <form action="/api/v1/user/session" method="POST">
+      <div class="row g-3 align-items-center pt-3">
+        <div class="col-auto">
+          <label for="account" class="col-form-label">帳號</label>
+        </div>
+        <div class="col-auto">
+          <input type="text" id="account" class="form-control" aria-describedby="accountHint">
+        </div>
+      </div>
+      <div class="col-auto">
+        <span id="accountHint" class="form-text">
+          使用者名稱或者信箱
+        </span>
+      </div>
+      <div class="row g-3 align-items-center pt-3">
+        <div class="col-auto">
+          <label for="inputPassword6" class="col-form-label">密碼</label>
+        </div>
+        <div class="col-auto">
+          <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHint">
+        </div>
+      </div>
+      <div class="col-auto">
+        <span id="passwordHint" class="form-text">
+          本系統支援卡片登入
+        </span>
+      </div>
+      <div class=" mt-3">
+        <button type="submit" class="btn btn-success">登入 (Login)</button>
+        <button class="btn btn-outline-primary">卡片登入</button>
+      </div>
+    </form>
+    <!-- <form>
+      <div class="mb-3">
+        <label for="account" class="form-label lead">帳號</label>
+        <input type="email" class="form-control" id="account" >
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label lead">密碼</label>
+        <input type="password" class="form-control" id="password">
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
+      <div class="form-text">本系統支援卡片登入</div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form> -->
+  </div>
+</body>
+</html>
