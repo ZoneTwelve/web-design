@@ -1,0 +1,283 @@
+
+.dh-text{color:#8c8279;}
+.db-active{color:#d9c3a8;}
+.dh-background{background-color: #3f3a36;}
+
+body{
+  width:100%;
+  margin:50px auto;
+  background:#faf6f0;
+}
+
+main.container{
+}
+
+header{
+  border-radius: 10px 10px 0px 0px;
+}
+header.main-home{
+  background: url("../images/testfile-header.jpg") #544c46;
+  background-size:cover;
+}
+
+footer.main-home{
+  padding: 20px 10px ;
+  color:white;
+  background-color: #3f3a36;
+  border-radius: 0px 0px 10px 10px;
+}
+
+h1#title{
+  text-align:left;
+  padding:50px 20px;
+  color:white;
+  text-shadow: 2px 2px black;
+}
+
+
+div#content{
+  min-height:800px;
+  background:white;
+  NOborder: 1px solid #e8e4df;
+  NObox-shadow: 10px 10px 5px 0px #e8e4df;
+}
+
+main>nav{
+  margin-top:-10px;
+}
+
+/* other design */
+a{
+  color:#8c8279;
+}
+a:active, a:hover{
+  color:#d9c3a8;
+  outline-width:0
+}
+
+
+/* bootstrap navbar color */
+.navbar {
+  background-color: #3f3a36;
+}
+.navbar .navbar-brand {
+  color: #ffffff;
+}
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+  color: #e0e0e0;
+}
+.navbar .navbar-text {
+  color: #ffffff;
+}
+.navbar .navbar-text a {
+  color: #e0e0e0;
+}
+.navbar .navbar-text a:hover,
+.navbar .navbar-text a:focus {
+  color: #e0e0e0;
+}
+.navbar .navbar-nav .nav-link {
+  color: #ffffff;
+  border-radius: .25rem;
+  margin: 0 0.25em;
+}
+.navbar .navbar-nav .nav-link:not(.disabled):hover,
+.navbar .navbar-nav .nav-link:not(.disabled):focus {
+  color: #e0e0e0;
+}
+.navbar .navbar-nav .dropdown-menu {
+  background-color: #3f3a36;
+  border-color: #59534e;
+}
+.navbar .navbar-nav .dropdown-menu .dropdown-item {
+  color: #ffffff;
+}
+.navbar .navbar-nav .dropdown-menu .dropdown-item:hover,
+.navbar .navbar-nav .dropdown-menu .dropdown-item:focus,
+.navbar .navbar-nav .dropdown-menu .dropdown-item.active {
+  color: #e0e0e0;
+  background-color: #59534e;
+}
+.navbar .navbar-nav .dropdown-menu .dropdown-divider {
+  border-top-color: #59534e;
+}
+.navbar .navbar-nav .nav-item.active .nav-link,
+.navbar .navbar-nav .nav-item.active .nav-link:hover,
+.navbar .navbar-nav .nav-item.active .nav-link:focus,
+.navbar .navbar-nav .nav-item.show .nav-link,
+.navbar .navbar-nav .nav-item.show .nav-link:hover,
+.navbar .navbar-nav .nav-item.show .nav-link:focus {
+  color: #e0e0e0;
+  background-color: #59534e;
+}
+.navbar .navbar-toggle {
+  border-color: #59534e;
+}
+.navbar .navbar-toggle:hover,
+.navbar .navbar-toggle:focus {
+  background-color: #59534e;
+}
+.navbar .navbar-toggle .navbar-toggler-icon {
+  color: #ffffff;
+}
+.navbar .navbar-collapse,
+.navbar .navbar-form {
+  border-color: #ffffff;
+}
+.navbar .navbar-link {
+  color: #ffffff;
+}
+.navbar .navbar-link:hover {
+  color: #e0e0e0;
+}
+
+@media (max-width: 575px) {
+  .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #ffffff;
+  }
+  .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+  .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+    color: #e0e0e0;
+  }
+  .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item.active {
+    color: #e0e0e0;
+    background-color: #59534e;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #ffffff;
+  }
+  .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+  .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+    color: #e0e0e0;
+  }
+  .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item.active {
+    color: #e0e0e0;
+    background-color: #59534e;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #ffffff;
+  }
+  .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+  .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+    color: #e0e0e0;
+  }
+  .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item.active {
+    color: #e0e0e0;
+    background-color: #59534e;
+  }
+  
+
+  #root-page{
+    display:none;
+  }
+  
+  h1#title{
+    text-align:center;
+  }
+  main.container{
+    padding:0px;
+    min-width:100%;
+  }
+}
+
+@media (max-width: 1199px) {
+  .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #ffffff;
+  }
+  .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+  .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+    color: #e0e0e0;
+  }
+  .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item.active {
+    color: #e0e0e0;
+    background-color: #59534e;
+  }
+
+  main.container{
+    max-width:100%;
+  }
+}
+
+@media (min-width: 992px){
+
+  .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #ffffff;
+  }
+  .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+  .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+    color: #e0e0e0;
+  }
+  .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item.active {
+    color: #e0e0e0;
+    background-color: #59534e;
+  }
+
+  .navbar-toggler.toggler-example {
+    cursor: pointer;
+  }
+  .dark-teal-text {
+    color: #004d40;
+  }
+
+
+  .nav-border{
+    border-left: 1px solid #645b54;
+  }
+  main.container{
+    max-width:80%;
+  }
+  .navbar-brand{
+    nopadding:20px;
+    opacity:0;
+  }
+
+  .navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+  }
+  
+
+  main.container{
+    min-width:auto;
+  }
+}
+
+.navbar-toggler{
+  border: 1px solid;
+}
+
+
+.icon-container {
+  display: inline-block;
+  cursor: pointer;
+  margin-top:-2px;
+  margin-left:-2px;
+}
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 4px;
+  background-color:white;
+  margin: 6px 0px;
+  transition: 0.2s;
+  border-radius:25px;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
