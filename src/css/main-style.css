@@ -7,5 +7,5 @@ nav{
 
 .nav-item > .active{
   color: white;
-  background: #c03c03;
+  background: #c03c03 !important;
 }
